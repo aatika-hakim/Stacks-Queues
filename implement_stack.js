@@ -24,6 +24,19 @@ console.log(stack); // [1,2,3,4]
 
 stack.push(5);
 console.log(stack); // [1,2,3,4,5]
+console.log(stack.pop()); //  5
+console.log(stack); // [1,2,3,4];
 
-stack.pop(5);
-console.log(stack);
+console.log(stack.pop()); //  4
+console.log(stack); // [1,2,3];
+
+console.log(stack.pop()); //  3
+console.log(stack); // [1,2];
+
+console.log(stack.pop()); //  2
+console.log(stack); // [1];
+
+console.log(stack.pop()); //  1
+console.log(stack); // []; -> empty
+
+console.log(stack.pop()); //  undefined
