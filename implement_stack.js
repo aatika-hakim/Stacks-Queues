@@ -5,8 +5,8 @@
 // int size()
 // boolean isEmpty()
 // int top()
-// void push(int element)
-// void pop()
+// push(int element)
+// pop()
 
 let stack = [];
 //  push method
@@ -25,6 +25,11 @@ console.log(stack); // [1,2,3,4]
 stack.push(5);
 console.log(stack); // [1,2,3,4,5]
 
+// size method
+
+let s = stack.length;
+console.log(s);
+
 // pop method
 console.log(stack.pop()); //  5
 console.log(stack); // [1,2,3,4];
@@ -39,6 +44,8 @@ console.log(stack.pop()); //  2
 console.log(stack); // [1];
 
 console.log(stack.pop()); //  1
-console.log(stack); // []; -> empty
+console.log(stack); // []; empty
 
 console.log(stack.pop()); //  undefined
+
+
