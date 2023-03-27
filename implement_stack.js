@@ -9,7 +9,7 @@
 // void pop()
 
 let stack = [];
-
+//  push method
 stack.push(1);
 console.log(stack); // [1]
 
@@ -24,6 +24,8 @@ console.log(stack); // [1,2,3,4]
 
 stack.push(5);
 console.log(stack); // [1,2,3,4,5]
+
+// pop method
 console.log(stack.pop()); //  5
 console.log(stack); // [1,2,3,4];
 
