@@ -57,4 +57,23 @@ queueDequeue()
 }
 return;
 }
+
+// Print queue elements
+queueDisplay()
+{
+	let i;
+	if (this.front == this.next)
+	{
+		console.log("Queue is Empty");
+		return;
+	}
+
+	// Traverse front to next and print elements
+	for(i = this.front; i < this.next; i++)
+	{
+		console.log(this.queue[i] + " <-- ");
+	}
+	return;
+}
+
 }
