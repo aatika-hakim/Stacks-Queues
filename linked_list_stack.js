@@ -39,10 +39,24 @@ class LinkedlistStack
 		// update top element
 		this.top = temp;
     }
-    
+
     // function to check if the stack is empty or not
 	isEmpty()
 	{
 		return this.top == null;
 	}
+
+    // function to return top element in a stack	
+	peek()
+	{
+		// check for empty stack
+		if (!this.isEmpty()) {
+			return this.top.data;
+		}
+		else {
+			console.log("Stack is empty");
+			return -1;
+		}
+	}
+	
 }
