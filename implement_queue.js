@@ -106,4 +106,14 @@ q.queueDisplay();
 // Insert element in the queue
 q.queueEnqueue(60);
 
+// Print Queue elements
+q.queueDisplay();
+
+q.queueDequeue();
+q.queueDequeue();
+console.log(" after two node deletion ");
+
+// Print Queue elements
+q.queueDisplay();
+
 
