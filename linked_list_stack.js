@@ -111,3 +111,7 @@ console.log("Top element is ", list.peek()+"");
 // Delete top element of Stack
 list.pop();
 list.pop();
+
+// again printing Stack elements
+list.display();
+
