@@ -59,4 +59,16 @@ class LinkedlistStack
 		}
 	}
 	
+    // function to pop top element from the stack
+	pop() // remove at the beginning
+	{
+		// check for stack underflow
+		if (this.top == null) {
+			console.log("Stack Underflow");
+			return;
+		}
+
+		// update the top pointer to point to the next node
+		this.top = this.top.link;
+	}
 }
