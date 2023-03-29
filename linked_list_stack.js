@@ -104,3 +104,7 @@ list.push("hi");
 
 // print Stack elements
 list.display();
+
+// print Top element of Stack
+console.log("Top element is ", list.peek()+"");
+
