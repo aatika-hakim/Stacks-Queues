@@ -29,5 +29,20 @@ class LinkedlistStack
 			console.log("Heap Overflow");
 			return;
 		}
+
+    // initialize data into temp data 
+		temp.data = x;
+
+		// put top element into temp link
+		temp.link = this.top;
+
+		// update top element
+		this.top = temp;
     }
+    
+    // function to check if the stack is empty or not
+	isEmpty()
+	{
+		return this.top == null;
+	}
 }
