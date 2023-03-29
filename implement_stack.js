@@ -3,7 +3,7 @@
 // The Stack class should support the following methods:
 
 // int size()
-//  isEmpty()
+// isEmpty()
 // int top()
 // push(int element)
 // pop()
@@ -44,6 +44,14 @@ function isEmpty(){
 
 // calling isEmpty function
 console.log(isEmpty());
+
+//Top method
+
+function peek() {
+    var t = stack.length - 1;
+    console.log(t)
+}
+console.log(peek());
 
 
 // pop method
