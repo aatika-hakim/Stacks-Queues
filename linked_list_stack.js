@@ -9,3 +9,12 @@ class Node
 		this.link=null;
 	}
 }
+
+// Create Stack Using Linked list
+class LinkedlistStack
+{
+	constructor()
+	{
+		this.top=null;
+	}
+}
