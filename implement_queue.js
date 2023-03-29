@@ -87,3 +87,10 @@ queueDisplay()
 	return;
 }
 }
+
+// Create a queue of capacity 4
+let q = new Queue(4);
+
+// Print Queue elements
+q.queueDisplay();
+
