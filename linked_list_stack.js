@@ -93,3 +93,11 @@ class LinkedlistStack
 		}
 	}
 }
+
+// create list of Implementing class
+let list = new LinkedlistStack();
+// insert Stack value
+list.push(34);
+list.push(565);
+list.push(0);
+list.push("hi");
