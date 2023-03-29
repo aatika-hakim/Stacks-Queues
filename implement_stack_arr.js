@@ -8,69 +8,76 @@
 // push(int element)
 // pop()
 
-let stack = [];
-//  push method
-stack.push(1);
-console.log(stack); // [1]
 
-stack.push(2);
-console.log(stack); // [1,2]
+// Stack class
+class Stack {
 
-stack.push(3);
-console.log(stack); // [1,2,3]
+	// Array is used to implement stack
+	constructor()
+	{
+		this.items = [];
+	}
 
-stack.push(4);
-console.log(stack); // [1,2,3,4]
-
-stack.push(5);
-console.log(stack); // [1,2,3,4,5]
-
-// size method
-
-let s = stack.length;
-console.log(s);
-
-
-// isEmpty method
-function isEmpty(){
-    if(stack.length === 0){
-        console.log("stack is empty.")
-    } else if(stack.length > 0){
-        console.log("stack is full.")
-    } else{
-        console.log("stack")
-    }  
+    // push function
+push(element)
+{
+	// push element into the items
+	this.items.push(element);
 }
-
-// calling isEmpty function
-console.log(isEmpty());
-
-//Top method
-
-function peek() {
-    var t = stack.length - 1;
-    console.log(t)
+// pop function
+pop()
+{
+	// return top most element in the stack
+	// and removes it from the stack
+	// Underflow if stack is empty
+	if (this.items.length == 0)
+		return "Underflow";
+	return this.items.pop();
 }
-console.log(peek());
+// peek function
+peek()
+{
+	// return the top most element from the stack
+	// but does'nt delete it.
+	return this.items[this.items.length - 1];
+}
+// isEmpty function
+isEmpty()
+{
+	// return true if stack is empty
+	return this.items.length == 0;
+}
+// printStack function
+printStack()
+{
+	var str = "";
+	for (var i = 0; i < this.items.length; i++)
+		str += this.items[i] + " ";
+	return str;
+}
+}
+// creating object for stack class
+var stack = new Stack();
 
+// Adding element to the stack
+stack.push(10);
+stack.push(20);
+stack.push(30);
 
-// pop method
-console.log(stack.pop()); //  5
-console.log(stack); // [1,2,3,4];
+// Printing the stack element
+// prints [10, 20, 30]
+console.log(stack.printStack());
 
-console.log(stack.pop()); //  4
-console.log(stack); // [1,2,3];
+// returns 30
+console.log(stack.peek());
 
-console.log(stack.pop()); //  3
-console.log(stack); // [1,2];
+// returns 30 and remove it from stack
+console.log(stack.pop());
 
-console.log(stack.pop()); //  2
-console.log(stack); // [1];
+console.log(stack.isEmpty());
 
-console.log(stack.pop()); //  1
-console.log(stack); // []; empty
-
-console.log(stack.pop()); //  undefined
+// returns [10, 20]
+console.log(stack.printStack());
 
 
 
