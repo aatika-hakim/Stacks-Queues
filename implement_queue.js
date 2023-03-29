@@ -116,4 +116,7 @@ console.log(" after two node deletion ");
 // Print Queue elements
 q.queueDisplay();
 
+// Print front of the queue
+q.queueFront();
+
 
