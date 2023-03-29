@@ -76,4 +76,14 @@ queueDisplay()
 	return;
 }
 
+    // Print front of queue
+    queueFront(){
+	if (this.front == this.next)
+	{
+		console.log("Queue is Empty");
+		return;
+	}
+	console.log("Front Element is: "+this.queue[this.front]);
+	return;
+}
 }
