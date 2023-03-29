@@ -71,4 +71,25 @@ class LinkedlistStack
 		// update the top pointer to point to the next node
 		this.top = this.top.link;
 	}
+
+    // displaying data and checking underflow
+    display()
+	{
+		// check for stack underflow
+		if (this.top == null) {
+			console.log("Stack Underflow");
+			
+		}
+		else {
+			let temp = this.top;
+			while (temp != null) {
+
+				// print node data
+				console.log(temp.data);
+
+				// assign temp link to temp
+				temp = temp.link;
+			}
+		}
+	}
 }
