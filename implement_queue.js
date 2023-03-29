@@ -27,4 +27,15 @@ queueEnqueue(data)
 	}
 	return;
 }
+
+// Function to delete an element from the front of the queue
+queueDequeue()
+{
+	
+	// If queue is empty
+	if (this.front == this.next)
+	{
+		console.log("Queue is empty");
+		return;
+	}
 }
