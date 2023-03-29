@@ -115,3 +115,5 @@ list.pop();
 // again printing Stack elements
 list.display();
 
+//Again printing Top element of Stack
+console.log("Top element is ", list.peek()+"");
