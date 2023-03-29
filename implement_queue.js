@@ -38,4 +38,14 @@ queueDequeue()
 		console.log("Queue is empty");
 		return;
 	}
+
+    
+    //Shift all the elements from index 2 till
+    // next to the right by one
+	else
+	{
+		for(let i = 0; i < this.next - 1; i++)
+		{
+			this.queue[i] = this.queue[i + 1];
+		}
 }
