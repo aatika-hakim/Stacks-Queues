@@ -48,4 +48,13 @@ queueDequeue()
 		{
 			this.queue[i] = this.queue[i + 1];
 		}
+        // Store 0 at next if there is no element
+		if (this.next < this.capacity)
+        this.queue[this.next] = 0;
+
+    // Decrement next
+    this.next--;
+}
+return;
+}
 }
