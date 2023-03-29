@@ -94,3 +94,16 @@ let q = new Queue(4);
 // Print Queue elements
 q.queueDisplay();
 
+// Inserting elements in the queue
+q.queueEnqueue(20);
+q.queueEnqueue(30);
+q.queueEnqueue(40);
+q.queueEnqueue(50);
+
+//Again Print Queue elements
+q.queueDisplay();
+
+// Insert element in the queue
+q.queueEnqueue(60);
+
+
