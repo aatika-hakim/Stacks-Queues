@@ -101,3 +101,6 @@ list.push(34);
 list.push(565);
 list.push(0);
 list.push("hi");
+
+// print Stack elements
+list.display();
