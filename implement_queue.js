@@ -3,27 +3,27 @@
 class Queue{
     constructor(c)
     {
-        this.front = this.next = 0; //next point to next block of end ele
+        this.front = this.rear = 0; //rear point to rear block of end ele
         this.capacity = c;
         this.queue = new Array(this.capacity);
     }
 
     
-// Function to insert an element at the next of the queue
+// Function to insert an element at the rear of the queue
 queueEnqueue(data)
 {
 	// Check queue is full or not
-	if (this.capacity == this.next)
+	if (this.capacity == this.rear)
 	{
 		console.log("Queue is full");
 		return;
 	}
 
-	// insert element at the next
+	// insert element at the rear
 	else
 	{
-		this.queue[this.next] = data;
-		this.next++;
+		this.queue[this.rear] = data;
+		this.rear++;
 	}
 	return;
 }
@@ -33,7 +33,7 @@ queueDequeue()
 {
 	
 	// If queue is empty
-	if (this.front == this.next)
+	if (this.front == this.rear)
 	{
 		console.log("Queue is empty");
 		return;
@@ -41,19 +41,19 @@ queueDequeue()
 
     
     //Shift all the elements from index 2 till
-    // next to the right by one
+    // rear to the right by one
 	else
 	{
-		for(let i = 0; i < this.next - 1; i++)
+		for(let i = 0; i < this.rear - 1; i++)
 		{
 			this.queue[i] = this.queue[i + 1];
 		}
-        // Store 0 at next if there is no element
-		if (this.next < this.capacity)
-        this.queue[this.next] = 0;
+        // Store 0 at rear if there is no element
+		if (this.rear < this.capacity)
+        this.queue[this.rear] = 0;
 
-    // Decrement next
-    this.next--;
+    // Decrement rear
+    this.rear--;
 }
 return;
 }
@@ -62,14 +62,14 @@ return;
 queueDisplay()
 {
 	let i;
-	if (this.front == this.next)
+	if (this.front == this.rear)
 	{
 		console.log("Queue is Empty");
 		return;
 	}
 
-	// Traverse front to next and print elements
-	for(i = this.front; i < this.next; i++)
+	// Traverse front to rear and print elements
+	for(i = this.front; i < this.rear; i++)
 	{
 		console.log(this.queue[i] + " <-- ");
 	}
@@ -78,7 +78,7 @@ queueDisplay()
 
     // Print front of queue
     queueFront(){
-	if (this.front == this.next)
+	if (this.front == this.rear)
 	{
 		console.log("Queue is Empty");
 		return;
