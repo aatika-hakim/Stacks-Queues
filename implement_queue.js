@@ -71,7 +71,7 @@ queueDisplay()
 	// Traverse front to rear and print elements
 	for(i = this.front; i < this.rear; i++)
 	{
-		console.log(this.queue[i] + " <-- ");
+		console.log(this.queue[i] + " ");
 	}
 	return;
 }
