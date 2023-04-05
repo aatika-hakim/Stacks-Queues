@@ -3,7 +3,7 @@
 /* print the element and NGE pair for all array elements of length n */
 
 
-function getNGE(arr, n) { // NGE means nearest greater element
+function getNGE(arr, n) {     // NGE means nearest greater element
     var stack = [];
 
      // push first element in stack
@@ -15,9 +15,9 @@ function getNGE(arr, n) { // NGE means nearest greater element
             continue;
         }
 
-        /* if stack is not empty, then pop an element from stack.If the popped element is smaller than next, then
+    /* if stack is not empty, then pop an element from stack.If the popped element is smaller than next, then
         print the pair,
- 		if elements are smaller and stack is not empty pop elements */
+ 		if elements are smaller and stack is not empty then pop elements */
 
         while(stack.length == 0 == false && stack[stack.length - 1] < arr[i]){
             console.log(stack[stack.length - 1] + " > " + arr[i]);
