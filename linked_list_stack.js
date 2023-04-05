@@ -1,4 +1,4 @@
-// Javascript program to Implement a stack using linked list
+//Implement a stack using linked list
 
 // A linked list node
 class Node
@@ -24,7 +24,7 @@ class LinkedlistStack
 		// create new node temp and allocate memory
 		let temp = new Node();
 
-		// check if stack (heap) is full.
+		// check if stack is full.
 		if (temp == null) {
 			console.log("Heap Overflow");
 			return;
